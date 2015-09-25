@@ -70,6 +70,9 @@
         font-size: 1.2em;
         color: #1D3667;
     }
+    h3, h4{
+        color: #1D3667;
+    }
     
     ul {
         list-style-position: inside;
@@ -110,9 +113,13 @@
     }
 
     .cci-footer {
-        padding: 10px; 
-        text-align: center;
-        background-color: #002664;
+        padding: 5px; 
+        background-color: #FFFFFF;
+        font-size: .6em;
+        line-height:50%;
+    }
+    .cci-footer b{
+        color: #1D3667;
     }
 
     p,li,ol {
@@ -124,7 +131,13 @@
     .bodyContent {
          width: 100px;
     }
-
+    .bodyContent b{
+        color: #1D3667;
+    }
+    .bodyContent h2:first-of-type{
+        color:#EDBB1C;
+    }
+    
 /* Global Elements from Luminate */
 
     
@@ -163,11 +176,11 @@
     }
 
     #footer {
-    text-align: center; 
-    margin-bottom: 20px;
-     font-family: Arial, Helvetica, sans-serif; 
-    font-size: 14px; color: #333; 
-    margin-top: 10px;
+        text-align: center; 
+        margin-bottom: 20px;
+         font-family: Arial, Helvetica, sans-serif; 
+        font-size: 14px; color: #333; 
+        margin-top: 10px;
     }
 }
 </style>
@@ -175,14 +188,14 @@
 <table class="emailstationery" border="0" cellspacing="0" cellpadding="0" align="center">
 <tbody>
 <tr>
-    <td class="cci-header">
+    <td class="cci-header" colspan="2">
                     <a href="http://www.kent.edu/cci" target="_blank"><img src="../../assets/img/kentstate-cci-logo.png" alt="Kent State
                         University College of Communication and Information" /></a>
     </td>
 </tr>
     
 <tr>
-    <td class="bodyContent">
+    <td class="bodyContent" colspan="2">
         <img src="../../assets/img/KSU_Picture.jpg"/>
         <h2>Dear Anonymous,</h2>
         <p>
@@ -205,30 +218,35 @@
 
         <hr>
     
-        <img src="../../assets/img/DeanPicture.jpg" style="float:left; vertical-align:middle; margin-right: 10px;"/>
+        <img src="../../assets/img/DeanPicture.jpg" style="float:left; vertical-align:middle; margin-right: 20px; margin-top: 20px;"/>
         <h2>Meet the New CCI Dean</h2>
         <p>
         Sed euismod neque lacinia imperdiet pretium. Proin posuere nibh rutrum malesuada iaculis. Phasellus ac urna mi. Class aptent taciti
         sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus in justo odio.
-        <br/>
         Aliquam sit amet nisi maximus, mattis lectus id, consequat sapien. Nam consectetur finibus imperdiet. Cras sed ligula id  sapien
-        feugiat gravida et eu turpis.
+        feugiat gravida et eu turpis.<br/><br/>
+        <b>EMAIL THE DEAN: </b>rkozy1@kent.edu
         </p>
+        
+        
     
-        <br/><br/><br/><br/>
-        <img src="../../assets/img/DeanPicture.jpg" style="vertical-align:top">
-        <span style="">Works.</span>
+        
         <img src="../../assets/img/Yellowbar.jpg"/>
-        <br/><br/>
+        <br/>
     </td>
 </tr>
 
 <tr>
-<td class="cci-footer">
-<p>Kent State University</p>
-<p>P.O. Box 5190</p>
-<p>Kent, OH 44242-0434</p>
-</td>
+    <td class="cci-footer">
+    <h4>KENT STATE UNIVERISTY COLLEGE OF COMMUNICATIONS</h4>
+    <p><b>Phone:</b> 330-672-2950 | <b>Email:</b> cci@kent.edu<br/><br/>
+    <b>Physical Address:</b> 800 E. Summit St., Kent, OH 44240<br/>
+    <b>Mailing Address:</b> Kent State University 131 Moulton Hall P.O. Box 5190 Kent, OH 44240</p>
+    </td>
+    <td class="cci-footer">
+        <h4>CONNECT WITH US</h4>
+        <img src="../../assets/img/icon.png" height="70"/>
+    </td>
 </tr>
 
 </tbody>
