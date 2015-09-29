@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
@@ -10,6 +10,40 @@
 <body>
 
 <style type="text/css">
+
+    /*                  *\
+       EMAIL CLIENT STYLES
+    \*                  */
+
+    .ReadMsgBody, .ExternalClass { width:100%; } /* Force Hotmail/Outlook.com to display emails at full width */  
+
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; } /* Force Hotmail/Outlook.com to display normal line spacing */
+
+    body, table, td, p, a, li, blockquote { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; } /* Prevent WebKit and Windows mobile from changing default text sizes */
+
+    table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; } /* Removes spacing between tables in Outlook 2007 and up */
+
+    img { -ms-interpolation-mode:bicubic; } /* Allows smoother rendering of resized images in Internet Explorer */
+
+    /*                  *\
+       RESET STYLES
+    \*                  */
+
+    body { min-width:100% !important; }
+
+    html { width:100%; }
+
+    img { border:0; height:auto; line-height:100%; outline:none; text-decoration:none; }
+
+    table { border-collapse:collapse !important; }
+
+    body  { height:100% !important; margin:0; padding:0; }  
+
+    div { padding:0px !important; }
+
+    h1, h2, h3, h4, h5, h6 { display:block; margin:0px; }
+
+    p { margin:0em 0em 1em; margin-bottom:1em; }
     
     #outlook a { 
       padding:0; 
@@ -79,7 +113,10 @@
         list-style-position: inside;
         padding-left:0;
     }  
-    
+
+    ul, ol {
+        font-size: 14px;
+    }
  
     td { 
       word-break: break-word;
@@ -149,7 +186,7 @@
     }
 
     .cci-footer-contact {
-        width: 400px;
+        width: 375px;
         padding: 0;
         margin: 0;
     }
@@ -158,6 +195,21 @@
         width: 150px;
         padding: 0;
         margin: 0;
+    }
+
+    .cci-info {
+        background-color: #eaab00;
+    }
+
+    .cci-info td {
+        padding: 15px;
+    }
+
+    .cci-info p {
+        color: white; 
+        margin: 0; 
+        font-size: 12px; 
+        font-style: italic;
     }
     
 /* Global Elements from Luminate */
@@ -204,12 +256,17 @@
         font-size: 13px !important;
     }
 
-    .cci-footer-contact, .cci-footer-connect {
-        table-layout: fixed !important;
-        float: none !important;
-        width: 90% !important;
-        margin: 0 auto !important;
-        display: block !important;
+    .cci-footer-contact {
+        width: 300px;
+    }
+
+    .cci-footer-connect {
+        width: 150px;
+    }
+
+    .cci-footer-connect img {
+        width: 50%;
+        height: auto;
     }
 
 /* Global Elements from Luminate */
@@ -281,12 +338,13 @@
         feugiat gravida et eu turpis.<br/><br/>
         <b>EMAIL THE DEAN: </b>rkozy1@kent.edu
         </p>
-        
-        
-    
-        
-        <img src="../../assets/img/Yellowbar.jpg"/>
-        <br/>
+        <br>
+    </td>
+</tr>
+
+<tr class="cci-info">
+    <td >
+        <p>The College of Communication &amp; Information is comprised of Communication Studies, Journalism & Mass Communication, Library & Information Science and Visual Communication Design.</p>
     </td>
 </tr>
 </tbody>
