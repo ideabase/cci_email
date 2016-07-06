@@ -75,10 +75,12 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
 
     .headerContent {
       padding: 20px;
-      padding-left: 38px;
       font-family: Helvetica, Arial, sans-serif;
-      background-color: #113772;
-    }
+      background-color: white;
+      text-align: center;
+      padding-bottom: 0;
+      padding-top: 10px;
+        }
 
     .headerTop img {
       width: 500px;
@@ -107,8 +109,8 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
     }
 
     .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-      /*@editable*/ color: black;
-      /*@editable*/ font-weight:normal;
+      /*@editable*/ color: #113772;
+      /*@editable*/ font-weight:bold;
       /*@editable*/ text-decoration:underline;
     }
 
@@ -215,6 +217,11 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
       color: white;
     }
 
+    p.prefooter-small {
+      font-size: 10px;
+      color: white;
+    }
+
     /* line */
 
     .line {
@@ -239,6 +246,19 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
       padding-bottom:10px;
       padding-left:35px;
       /*@editable*/ text-align:center;
+    }
+
+    .footerContent h4 {
+      font-family: AvenirNext-Bold, sans-serif;
+      text-transform: uppercase;
+      color: #2C8ECD;
+      font-size: 15px;
+      line-height: 22px;
+      margin-top: 15px;
+    }
+
+    .footerContent p {
+      font-size: 14px;
     }
 
     .unsubscribeContent {
@@ -313,14 +333,15 @@ a {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 25px;
   color: #113772;
   letter-spacing: 1.02px;
   text-transform: uppercase;
-  font-family: AvenirNextCondensed-Regular, sans-serif;
+  font-family: AvenirNextCondensed-Medium, sans-serif;
   margin-top: 15px;
   margin-bottom: 10px;
   display: block;
+  line-height: 30px;
 }
 
 h2 {
@@ -329,7 +350,7 @@ h2 {
   letter-spacing: 1px;
   margin-top: 25px;
   font-size: 20px;
-  color: #993399;
+  color: #113772;
 }
 
 h3 {
@@ -337,7 +358,7 @@ h3 {
   text-transform: uppercase;
   display: inline-block;
   color: #2C8ECD;
-  font-size: 17px;
+  font-size: 16px;
   margin-top: 15px;
 }
 
@@ -355,9 +376,12 @@ p {
 }
 
 hr {
-  border: 1px solid black;
-  margin-top: 25px;
-  margin-bottom: 35px;
+  background-color: #EDBB1C;
+height: 3px;
+border: 0;
+clear: left;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 
 .sansSerifCustom {
@@ -368,6 +392,18 @@ hr {
   width: 25px;
   display:inline;
   padding: 3px;
+}
+
+.byline {
+  margin-bottom: 10px;
+  font-style: normal !important;
+}
+
+.byline strong a:link {
+  margin-top: 15px;
+  display: inline-block;
+  color: #1c3d73;
+  font-weight: bold;
 }
 
 
