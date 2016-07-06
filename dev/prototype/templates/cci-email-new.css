@@ -17,7 +17,7 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
 /* ========== Page Styles ========== */
 
     #bodyCell{padding:20px;}
-    #templateContainer{width:525px;}
+    #templateContainer{width:525px; margin-bottom: 15px;}
 
     /**
     * @tab Page
@@ -40,10 +40,10 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
       /*@editable*/ font-size:10px;
       /*@editable*/ line-height:155%;
       /*@editable*/ text-align:left;
-      padding-top:7px;
-      padding-right:10px;
+      padding-top:0px;
+      padding-right:0px;
       padding-bottom:7px;
-      padding-left:10px;
+      padding-left:0px;
 
     }
 
@@ -70,11 +70,11 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
       margin: 0;
       border-collapse: collapse;
       border: none;
-      line-height: 0
+      line-height: 0px
     }
 
     .headerContent {
-      padding: 15px;
+      padding: 20px;
       padding-left: 30px;
       font-family: Helvetica, Arial, sans-serif;
       background-color: #113772;
@@ -189,9 +189,9 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
       /*@editable*/ color:#808080;
       /*@editable*/ font-family:Helvetica;
       /*@editable*/ font-size:12px;
-      padding-top:20px;
+      padding-top:35px;
       padding-right:35px;
-      padding-bottom:10px;
+      padding-bottom:15px;
       padding-left:35px;
       /*@editable*/ text-align:center;
       color: white;
@@ -199,7 +199,7 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
 
     .prefooterContent h4 {
       color: white;
-      font-family: "AvenirNext-BoldItalic", sans-serif;
+      font-family: AvenirNext-BoldItalic, sans-serif;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 16px;
@@ -209,6 +209,10 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
     .prefooterContent p {
       color: white;
       font-size: 14px;
+    }
+
+    .prefooterContent a {
+      color: white;
     }
 
     /* line */
@@ -228,13 +232,31 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
     .footerContent{
       /*@editable*/ color:#808080;
       /*@editable*/ font-family:Helvetica;
+      /*@editable*/ font-size:11px;
+      /*@editable*/ line-height:150%;
+      padding-top:20px;
+      padding-right:20px;
+      padding-bottom:10px;
+      padding-left:35px;
+      /*@editable*/ text-align:center;
+    }
+
+    .unsubscribeContent {
+      /*@editable*/ color:#808080;
+      /*@editable*/ font-family:Helvetica;
       /*@editable*/ font-size:12px;
       /*@editable*/ line-height:150%;
       padding-top:20px;
       padding-right:20px;
+      padding-bottom:30px;
+      padding-left:35px;
+    }
+
+    .footerSocial {
+      padding-top:0px;
+      padding-right:20px;
       padding-bottom:20px;
-      padding-left:20px;
-      /*@editable*/ text-align:center;
+      padding-left:33px;
     }
 
     .footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
@@ -243,13 +265,19 @@ body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:1
       /*@editable*/ text-decoration:underline;
     }
 
+
     .hcard-download {
       color:rgb(107,200,200);
     }
 
     /* Lists */
 
-    li {
+    ul {
+      color: black;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-family: Avenir-Book, Arial, Helvetica, sans-serif;
+      font-size: 15px;
       margin-bottom: 10px;
       color: black;
     }
@@ -277,18 +305,18 @@ a {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 36px;
   color: #113772;
   letter-spacing: 1.02px;
   text-transform: uppercase;
-  font-family: "AvenirNextCondensed-Regular", sans-serif;
+  font-family: AvenirNextCondensed-Regular, sans-serif;
   margin-top: 15px;
   margin-bottom: 10px;
   display: block;
 }
 
 h2 {
-  font-family: "AvenirNext-BoldItalic", sans-serif;
+  font-family: AvenirNext-BoldItalic, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 25px;
@@ -297,17 +325,16 @@ h2 {
 }
 
 h3 {
-  font-family: "AvenirNext-Bold", sans-serif;
+  font-family: AvenirNext-Bold, sans-serif;
   text-transform: uppercase;
   display: inline-block;
-  border-bottom: 2px solid #2C8ECD;
   color: #2C8ECD;
   font-size: 17px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .introduction {
-  font-size: 17px;
+  font-size: 18px;
   margin-top: 20px;
 }
 
@@ -315,7 +342,7 @@ p {
   color: black;
   margin-top: 10px;
   margin-bottom: 15px;
-  font-family: "Avenir-Book", Arial, Helvetica, sans-serif;
+  font-family: Avenir-Book, Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
@@ -327,6 +354,12 @@ hr {
 
 .sansSerifCustom {
   font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+.cci-footer-icons img {
+  width: 25px;
+  display:inline;
+  padding: 3px;
 }
 
 
@@ -367,7 +400,7 @@ hr {
   }
 
   .headerContent img {
-    width: 85% !important;
+    width: 95% !important;
   }
 
   .bodyImage img {
@@ -376,6 +409,13 @@ hr {
 
   .line img {
     width: 90% !important;
+  }
+
+  .bodyContent img {
+  width: 100% !important;
+  margin: 15px auto 15px auto !important;
+  display: block !important;
+  clear: both !important;
   }
 
 
